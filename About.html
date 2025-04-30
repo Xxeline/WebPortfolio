@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Background Music -->
+<audio id="bg-music" src="music/Ako'y Tahimik Lang Sa Umpisa MPL - Toni Fowler.mp3" loop></audio>
+
+<!-- Music Control Button -->
+<div class="music-controls">
+    <button onclick="toggleMusic()">🎵 Toggle Music</button>
+</div>
+
+
+
+<!-- Header Section Code-->
+
+    <header id="main-header" class="header">
+        <a href="index.html" class="logo">⋆˚࿔ Celine 𝜗𝜚˚⋆</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Quizzes.html">Quizzes</a>
+            <a href="Contact.html">Contact</a> 
+        </nav>
+    </header>
+
+    
+    <!-- About Section Code -->
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Im a <span>3rd Year Student </span></h3>
+            <p>a Barbie-loving, makeup-obsessed, nap-taking queen 😴💄🎀
+
+                I believe life’s too short not to be fabulous, so whether I’m blending the perfect eyeshadow look or designing something cute online, I always add a touch of sparkle. I love turning my creative ideas into something real, whether that’s a killer makeup look or a stylish web project.
+                
+                When I’m not being productive, you can definitely find me curled up for a nap. Sleep is self-care, okay?
+                
+                I’m all about beauty, creativity, and a little bit of glam in everything I do 💕
+                
+            </p>
+                  
+        </div>
+        
+        <div class="about-img">
+            <img src="images/ahh daddy.jpg" alt="About Image">
+        </div>
+    </section>
+
+ 
+  
+   
+
+
+    <!-- Footer Section Area-->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://discord.com/channels/969926159280259123"><i class='bx bxl-discord'></i></a>
+            <a href="https://github.com/Xxeline"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.facebook.com/clncrz.04/"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/_notcline/"><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <p class="copyright">
+            <p class="copyright">
+            &copy; Celine Cuz - All Rights Reserved
+           
+        </p>
+    </footer>
+
+
+    <script>
+        const music = document.getElementById("bg-music");
+    
+        function toggleMusic() {
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+     
+</body>
+</html>

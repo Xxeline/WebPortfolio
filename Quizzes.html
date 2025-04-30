@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Portfolio</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="music/Ako'y Tahimik Lang Sa Umpisa MPL - Toni Fowler.mp3" loop></audio>
+
+  <!-- Music Control Button -->
+  <div class="music-controls">
+    <button onclick="toggleMusic()">🎵 Toggle Music</button>
+  </div>
+
+  <!-- Header Section -->
+  <header id="main-header" class="header">
+    <a href="index.html" class="logo">⋆˚࿔ Celine 𝜗𝜚˚⋆</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Projects.html">Projects</a>
+      <a href="Quizzes.html">Quizzes</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Pre-Test Section -->
+  <section class="quizzes" id="quizzes">
+    <div class="quizzes-box">
+      <h2 class="heading"><span>My </span> Pre-Test</h2>
+
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Quiz Cards -->
+          <div class="carousel-card">
+            <img src="images/pretest.png" alt="">
+            <span class="tag">Pre-Test 1</span>
+            <h3>HUMAN-COMPUTER INTERACTION</h3>
+            <p>0/20</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/pretest.png" alt="">
+            <span class="tag">Pre-Test 2</span>
+            <h3>USER-CENTERED DESIGN</h3>
+            <p>0/20</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/pretest.png" alt="">
+            <span class="tag">Pre-Test 3</span>
+            <h3>USER-CENTERED DESIGN</h3>
+            <p>0/20</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/pretest.png" alt="">
+            <span class="tag">Pre-Test 4</span>
+            <h3>HUMAN-COMPUTER INTERACTION</h3>
+            <p>0/20</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/pretest.png" alt="">
+            <span class="tag">Pre-Test 5</span>
+            <h3>HUMAN-COMPUTER INTERACTION</h3>
+            <p>0/20</p>
+          </div>
+        </div>
+
+        <div class="carousel-nav">
+          <button id="prevBtn"><i class='bx bx-chevron-left'></i></button>
+          <button id="nextBtn"><i class='bx bx-chevron-right'></i></button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Post-Test Section -->
+  <section class="quizzes" id="quizzes-2">
+    <div class="quizzes-box">
+      <h2 class="heading"><span>My </span> Post-Test</h2>
+
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Quiz Cards -->
+          <div class="carousel-card">
+            <img src="images/post test1.jpeg" alt="">
+            <span class="tag">Post Test 1</span>
+            <h3>HUMAN-COMPUTER INTERACTION</h3>
+            <p>10/20</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/post test 2.jpeg" alt="">
+            <span class="tag">Post Test 2</span>
+            <h3>HUMAN-COMPUTER INTERACTION</h3>
+            <p>19/20</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/post test 3.jpeg" alt="">
+            <span class="tag">Post Test 3</span>
+            <h3>HUMAN-COMPUTER INTERACTION</h3>
+            <p>16/20</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/post test 4.jpeg" alt="">
+            <span class="tag">Post Test 4</span>
+            <h3>HUMAN-COMPUTER INTERACTION</h3>
+            <p>16/20</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/post test 5.jpeg" alt="">
+            <span class="tag">Post Test 5</span>
+            <h3>HUMAN-COMPUTER INTERACTION</h3>
+            <p>16/20</p>
+          </div>
+
+        </div>
+
+        <div class="carousel-nav">
+          <button id="prevBtn2"><i class='bx bx-chevron-left'></i></button>
+          <button id="nextBtn2"><i class='bx bx-chevron-right'></i></button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exam Section -->
+  <section class="exam" id="exam-3">
+    <div class="quizzes-box">
+      <h2 class="heading"><span>My </span> Exam</h2>
+
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Exam Cards -->
+          <div class="carousel-card">
+            <img src="images/exam.jpeg" alt="">
+            <span class="tag">Midterm</span>
+            <h3>HUMAN COMPUTER INTERACTION II</h3>
+            <p>17/70</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/quiz5.jpg" alt="">
+            <span class="tag">Finals</span>
+            <h3>HUMAN COMPUTER INTERACTION II</h3>
+            <p>0/20</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="images/long quiz.jpeg" alt="">
+            <span class="tag">Long Quiz Midterm</span>
+            <h3>HUMAN COMPUTER INTERACTION II</h3>
+            <p>31/40</p>
+          </div>
+        </div>
+
+        <div class="carousel-nav">
+          <button id="prevBtn3"><i class='bx bx-chevron-left'></i></button>
+          <button id="nextBtn3"><i class='bx bx-chevron-right'></i></button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social">
+      <a href="https://discord.com/channels/969926159280259123"><i class='bx bxl-discord'></i></a>
+      <a href="https://github.com/Xxeline"><i class='bx bxl-github'></i></a>
+      <a href="https://www.facebook.com/clncrz.04/"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com/_notcline/"><i class='bx bxl-instagram'></i></a>
+    </div>
+    <p class="copyright">
+      &copy; 2025 Celine Cruz - All Rights Reserved
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const music = document.getElementById("bg-music");
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Carousel Script (for 3 carousels) -->
+  <script>
+    function initCarousel(trackSelector, prevBtnId, nextBtnId, dotsContainerId) {
+      const track = document.querySelector(trackSelector);
+      const cards = track.querySelectorAll('.carousel-card');
+      const prevBtn = document.getElementById(prevBtnId);
+      const nextBtn = document.getElementById(nextBtnId);
+      const dotsContainer = document.getElementById(dotsContainerId);
+
+      let index = 0;
+      let cardsPerView = getCardsPerView();
+
+      function getCardsPerView() {
+        if (window.innerWidth < 768) return 1;
+        if (window.innerWidth < 1024) return 2;
+        return 3;
+      }
+
+      function updateDots() {
+        dotsContainer.innerHTML = '';
+        const total = cards.length - cardsPerView + 1;
+        for (let i = 0; i < total; i++) {
+          const dot = document.createElement('span');
+          if (i === index) dot.classList.add('active');
+          dotsContainer.appendChild(dot);
+          dot.addEventListener('click', () => {
+            index = i;
+            updateCarousel();
+          });
+        }
+      }
+
+      function updateCarousel() {
+        const cardWidth = cards[0].offsetWidth + 20;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+        updateDots();
+      }
+
+      nextBtn.addEventListener('click', () => {
+        if (index < cards.length - cardsPerView) {
+          index++;
+          updateCarousel();
+        }
+      });
+
+      prevBtn.addEventListener('click', () => {
+        if (index > 0) {
+          index--;
+          updateCarousel();
+        }
+      });
+
+      window.addEventListener('resize', () => {
+        cardsPerView = getCardsPerView();
+        if (index > cards.length - cardsPerView) index = cards.length - cardsPerView;
+        updateCarousel();
+      });
+
+      updateCarousel();
+    }
+
+    initCarousel('#quizzes .carousel-track', 'prevBtn', 'nextBtn', 'carouselDots');
+    initCarousel('#quizzes-2 .carousel-track', 'prevBtn2', 'nextBtn2', 'carouselDots2');
+    initCarousel('#exam-3 .carousel-track', 'prevBtn3', 'nextBtn3', 'carouselDots3');
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Background Music -->
+<audio id="bg-music" src="music/Ako'y Tahimik Lang Sa Umpisa MPL - Toni Fowler.mp3" loop></audio>
+
+<!-- Music Control Button -->
+<div class="music-controls">
+    <button onclick="toggleMusic()">🎵 Toggle Music</button>
+</div>
+
+
+
+<!-- Header Section Code-->
+
+    <header id="main-header" class="header">
+        <a href="index.html" class="logo">⋆˚࿔ Celine 𝜗𝜚˚⋆</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Quizzes.html">Quizzes</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+   <!-- Projects Section Code -->
+<section class="projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+  
+    <div class="projects-container">
+  
+      <!-- Blog Project -->
+      <div class="projects-box">
+        <i class='bx bxl-blogger'></i>
+        <h3>Blog</h3>
+        <p>
+          A beauty blog where I share my thoughts, reviews, and makeup looks using my
+          favorite local brands Lucky Beauty, GRWM Cosmetics, and Issy. I talk about their best
+          products, what works for me, and why I love supporting Filipino beauty. This blog is all about celebrating quality, creativity, and homegrown talent in the local makeup scene.
+        </p>
+        <a href="https://drive.google.com/file/d/1srO_DMw6v9-YnQQp14-RV0SkvH1_zcid/view?usp=drive_link" target="_blank" class="btn">
+            <button class="button">View Blog</button>
+        </a>
+      </div>
+  
+      <!-- Web Portfolio Project -->
+      <div class="projects-box">
+        <i class='bx bx-file'></i>
+        <h3>Web Portfolio</h3>
+        <p>
+          Welcome to my Barbie-themed web portfolio! 💖 Here, you’ll get to know more about me,
+          explore my creative projects, take some fun quizzes, and connect with me through my
+          social media links. This site reflects my style bright, bold, and full of personality just like Barbie herself!
+        </p>
+        <a href="https://drive.google.com/drive/folders/1O3uAbz3GcNgyAHh8Fdpn1u0S6fXVM5SP?usp=drive_link" target="_blank" class="btn">
+            <button class="button">View Portfolio</button>
+        </a>
+      </div>
+  
+    </div>
+  </section>
+  
+ 
+  </div>
+</section>
+
+
+    <!-- Footer Section Area-->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://discord.com/channels/969926159280259123"><i class='bx bxl-discord'></i></a>
+            <a href="https://github.com/Xxeline"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.facebook.com/clncrz.04/"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/_notcline/"><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <p class="copyright">
+            <p class="copyright">
+            &copy; Celine Cuz - All Rights Reserved
+           
+        </p>
+    </footer>
+
+
+    <script>
+        const music = document.getElementById("bg-music");
+    
+        function toggleMusic() {
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+     
+</body>
+</html>
